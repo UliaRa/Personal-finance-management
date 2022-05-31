@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Учет финансов</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__tabs">
+            <a href="index.html" class="header__tab header__tab--opened">Доходы</a>
+            <a href="pages/index2.html" class="header__tab">Расходы</a>
+            <a href="pages/goals.html" class="header__tab">Цели</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="budget">
+            <span class="budget__label">
+                Бюджет:
+            </span>
+            <p class="budget__num"></p>
+        </div>
+
+        <div class="block">
+            <div class="filter">
+                <span class="filter__text">Показать за период:</span>
+                <div class="filter__fields">
+                    <input name="date-input" id="beginDate" type="date" placeholder="Начало">
+                    <input name="date-input" id="endDate" type="date" placeholder="Конец">
+                    <button class="filter__btn btn" onclick="sortDate()">Сортировать</button>
+                    <button class="filter__btn btn" onclick="clearDate()">Очистить</button>
+                </div>
+                <p class="error filter__error"></p>
+            </div>
+    
+            <div class="category">
+                <div class="category__list">
+                </div>
+                
+                <div class="category__new">
+                    <button class="btn" onclick="showNew()">Добавить</button>
+                </div>
+            </div>
+
+            <div class="new new--hidden">
+                <div class="new__add">
+                    <div class="new__block">
+                        <label class="new__label" for="name-input">Название:</label>
+                        <input name="name-input" id="inputName" class="new__input" type="text" placeholder="Введите название" required>
+                    </div>
+    
+                    <button class="new__btn btn" onclick="addNew()" type="submit">Добавить</button>
+                    <button class="btn new__cancel" onclick="hideNew()">Отменить</button>
+                </div>
+                <p class="error new__error"></p>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>
