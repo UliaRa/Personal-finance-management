@@ -1,0 +1,55 @@
+.goal {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.goal__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.goal__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 180px;
+  height: 100px;
+}
+.goal__item:not(:first-child) {
+  margin-left: 30px;
+}
+.goal__item p {
+  border: 3px solid #ADA1E6;
+  background-color: #fff;
+  color: #ADA1E6;
+  text-align: center;
+  padding: 5px 0 0;
+  width: 180px;
+  height: 50px;
+}
+.goal__item--done p {
+  border: 3px solid #D562BE;
+  color: #D562BE;
+}
+.goal__name {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.goal__score {
+  font-weight: 500;
+}
+.goal__new {
+  display: block;
+  color: #ADA1E6;
+  margin: 20px 0 0 30px;
+}
+.goal__new--hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=goal.css.map */

@@ -1,0 +1,47 @@
+.income__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.income__back {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.income__back:hover {
+  color: #ADA1E6;
+}
+.income__title {
+  text-transform: capitalize;
+  font-size: 26px;
+}
+.income__delete {
+  margin-right: 20px;
+}
+
+.note__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.note__item p {
+  padding: 0 60px;
+}
+.note__item:not(:first-child) {
+  margin-top: 15px;
+}
+.note__new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.note__new *:not(:first-child) {
+  margin-left: 30px;
+}
+.note__error {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=category.css.map */

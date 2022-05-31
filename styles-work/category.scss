@@ -1,0 +1,66 @@
+
+// INCOME
+
+.income {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__back {
+        font-size: 18px;
+        font-weight: 600;
+
+        margin-left: 20px;
+
+        &:hover {
+            color: #ADA1E6;
+        }
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-size: 26px;
+    }
+
+    &__delete {
+        margin-right: 20px;
+    }
+}
+
+// NOTE
+
+.note {
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            padding: 0 60px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+    }
+
+    &__new {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 40px;
+
+        *:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+
+    &__error {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
