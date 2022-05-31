@@ -33,7 +33,11 @@ function setData() {
     drawGoals(JSON.parse(goalList))
     
     let total = document.querySelector('.budget__num')
-    total.innerHTML = localStorage.getItem('total') + '₽'
+    let totalSum = localStorage.getItem('total')
+    if (totalSum == null) {
+        totalSum = 0
+    }
+    total.innerHTML = totalSum + '₽'
 }
 
 window.onload = setData();
