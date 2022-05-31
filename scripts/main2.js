@@ -31,6 +31,9 @@ function setData() {
     drawCategories(JSON.parse(expenseList), JSON.parse(expenseList))
     
     let total = document.querySelector('.budget__num')
+    if (total == null) {
+        total = 0
+    }
     total.innerHTML = localStorage.getItem('total') + '₽'
 }
 
