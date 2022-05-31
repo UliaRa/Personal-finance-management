@@ -31,10 +31,11 @@ function setData() {
     drawCategories(JSON.parse(expenseList), JSON.parse(expenseList))
     
     let total = document.querySelector('.budget__num')
-    if (total == null) {
-        total = 0
+    let totalSum = localStorage.getItem('total')
+    if (totalSum == null) {
+        totalSum = 0
     }
-    total.innerHTML = localStorage.getItem('total') + '₽'
+    total.innerHTML = totalSum + '₽'
 }
 
 window.onload = setData();
